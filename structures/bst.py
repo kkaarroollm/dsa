@@ -49,3 +49,20 @@ class BST:
 
     def __insert(self, value) -> None:
         pass
+
+# https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/e/quiz--asymptotic-notation !!!
+# przecwiczyc założenia logarytmow z potegami itp...
+
+
+
+# O(g(n))
+# Górna granica
+# f(n) rośnie nie szybciej niż g(n)
+
+# Ω(g(n))
+# Dolna granica
+# f(n) rośnie nie wolniej niż g(n)
+
+# Θ(g(n))
+# Dokładna granica
+# f(n) rośnie tak samo jak g(n) (z dokładnością do stałych)

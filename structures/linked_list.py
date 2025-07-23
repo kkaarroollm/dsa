@@ -89,7 +89,7 @@ print(ll.get(4))
 print(ll.get(0))
 
 ll.insert(4, 69)
-ll.insert(2 ,42)
+ll.insert(2, 42)
 
 ll.remove(5)
 
