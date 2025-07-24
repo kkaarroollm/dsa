@@ -1,21 +1,5 @@
 from collections import deque
-
-
-class TNode:
-    def __init__(
-        self, val: int, left: "TNode" | None = None, right: "TNode" | None = None
-    ):
-        self.val = val
-        self.left = left
-        self.right = right
-
-    def __str__(self):
-        return str(self.val)
-
-
-A = TNode(
-    1, left=TNode(2, left=TNode(4), right=TNode(5)), right=TNode(3, right=TNode(10))
-)
+from tree import TNode
 
 
 # Recursive Pre Order Traversal (DFS) Time: O(n), Space: O(n)
