@@ -8,6 +8,7 @@ Big O:
 
 from functools import total_ordering
 
+
 @total_ordering
 class Task:
     def __init__(self, name: str, priority: int):
@@ -55,7 +56,10 @@ class PriorityQueue:
             parent = (idx - 1) // 2
             if self.__heap[idx] <= self.__heap[parent]:
                 break
-            self.__heap[idx], self.__heap[parent] = self.__heap[parent], self.__heap[idx]
+            self.__heap[idx], self.__heap[parent] = (
+                self.__heap[parent],
+                self.__heap[idx],
+            )
             idx = parent
 
     def __heapify_down(self):
@@ -73,7 +77,10 @@ class PriorityQueue:
             if largest == idx:
                 break
 
-            self.__heap[idx], self.__heap[largest] = self.__heap[largest], self.__heap[idx]
+            self.__heap[idx], self.__heap[largest] = (
+                self.__heap[largest],
+                self.__heap[idx],
+            )
             idx = largest
 
 
@@ -90,4 +97,3 @@ pq.insert(Task("check mails", 2))
 for _ in range(pq.size):
     print(pq.extract())
     # print(pq._PriorityQueue__heap)
-

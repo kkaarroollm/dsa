@@ -23,8 +23,8 @@ class Queue:
 
 def produce_order(queue, data):
     for item in data:
-       queue.enqueue(item)
-       time.sleep(0.5)
+        queue.enqueue(item)
+        time.sleep(0.5)
 
 
 def consume_order(queue):
@@ -38,7 +38,10 @@ def consume_order(queue):
 if __name__ == "__main__":
     q = Queue()
 
-    t1 = threading.Thread(target=produce_order, args=(q, ['pizza','samosa','pasta','biryani','burger']))
+    t1 = threading.Thread(
+        target=produce_order,
+        args=(q, ["pizza", "samosa", "pasta", "biryani", "burger"]),
+    )
     t2 = threading.Thread(target=consume_order, args=(q,))
 
     t1.start()
@@ -50,6 +53,3 @@ if __name__ == "__main__":
     print("t2 started")
 
     t1.join()
-
-
-

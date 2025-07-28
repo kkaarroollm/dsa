@@ -11,6 +11,7 @@ from typing import Iterator, Self
 # insert
 # delete
 
+
 @dataclass
 class _Node:
     value: int
@@ -22,14 +23,12 @@ class _Node:
         yield self.value
         yield from self.right or []
 
-
     def __repr__(self) -> str:
         from pprint import pformat
 
         if self.left is None and self.right is None:
             return str(self.value)
         return pformat({f"{self.value}": (self.left, self.right)}, indent=1)
-
 
 
 @dataclass
@@ -50,9 +49,9 @@ class BST:
     def __insert(self, value) -> None:
         pass
 
+
 # https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/e/quiz--asymptotic-notation !!!
 # przecwiczyc założenia logarytmow z potegami itp...
-
 
 
 # O(g(n))
