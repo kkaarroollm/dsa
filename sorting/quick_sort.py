@@ -13,11 +13,11 @@ def quick_sort(seq, start, end):
 def partition(seq, start, end) -> int:
     # returns new pivot for the given array
     pivot = seq[end]
-    i = start - 1 # start at -1 position
+    i = start - 1  # start at -1 position
 
     for idx in range(start, end + 1):
         if seq[idx] < pivot:
-            i += 1 # moving to the next comparing position
+            i += 1  # moving to the next comparing position
             # temp = seq[i]
             # seq[i] = seq[idx]
             # seq[idx] = temp

@@ -1,10 +1,11 @@
 ## Big O -- O(n log n) best, O(n log n) worst
 
+
 def _merge(left, right):
     result = []
     i = j = 0
 
-    while i < len(left) and  j < len(right):
+    while i < len(left) and j < len(right):
         if left[i] < right[j]:
             result.append(left[i])
             i += 1
@@ -19,7 +20,6 @@ def _merge(left, right):
         result += right[j:]
 
     return result
-
 
 
 def merge_arrays_sort(seq):
@@ -37,11 +37,13 @@ def merge_arrays_sort(seq):
     sorted_right = merge_arrays_sort(right)
     return _merge(sorted_left, sorted_right)
 
+
 seq1 = [2, 4, 7, 3, 6, 234, 1, 7, 9, 11, 6, 1, -5, 18, 55, 192]
 print(merge_arrays_sort(seq1))
 
 
 # space complex with linked list - O(1)
+
 
 def merge_linked_lists_sort(head):
     pass

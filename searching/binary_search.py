@@ -1,5 +1,6 @@
 ## Divide and Conquer - divide problems onto small ones, then solve smaller problems
 
+
 def binary_search(seq, key):
     # returns index of a target key
     # it manipulates the index of the sequence, which are increasing
@@ -24,4 +25,3 @@ def binary_search(seq, key):
 seq1 = [2, 4, 6, 7, 9, 11, 15, 18, 55, 192, 234]
 
 print(binary_search(seq1, 234))
-

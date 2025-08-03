@@ -15,8 +15,6 @@ def counting_sort(seq):
 
     return sorted_arr
 
+
 seq1 = [2, 4, 6, 6, 234, 1, 7, 9, 11, 6, 1, -5, 18, 55, 192]
 print(counting_sort(seq1))
-
-
-

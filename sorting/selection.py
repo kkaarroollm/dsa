@@ -2,6 +2,7 @@
 ## Always iterates through the whole sequence even if it's already sorted
 ## returning a non-decreasing sequence
 
+
 def selection_sort(seq):
     size = len(seq)
 
@@ -23,7 +24,3 @@ def selection_sort(seq):
 seq1 = [2, 4, 6, 6, 234, 1, 7, 9, 11, 6, 1, -5, 18, 55, 192]
 
 print(selection_sort(seq1))
-
-
-
-

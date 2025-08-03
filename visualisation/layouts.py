@@ -1,5 +1,6 @@
 import networkx as nx
 
+
 def hierarchy_pos(
     G: nx.DiGraph,
     root: str | None = None,
@@ -10,7 +11,6 @@ def hierarchy_pos(
     pos: dict[str, tuple[float, float]] | None = None,
     parent: str | None = None,
 ) -> dict[str, tuple[float, float]]:
-
     if pos is None:
         pos = {}
     pos[root] = (x_center, vert_loc)
